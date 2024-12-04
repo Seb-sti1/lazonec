@@ -1,0 +1,45 @@
+﻿/*
+Fihcier css ajouté à toute les pages (sauf maintenance.php)
+*/
+/* ====== Add new Font ===== */
+@font-face {
+    font-family: Cabin-SemiBold;
+    src: url(./../police/Cabin-SemiBold.ttf);
+}
+@font-face {
+    font-family: Cabin-MediumItalic;
+    src: url(./../police/Cabin-MediumItalic.ttf);
+}
+@font-face {
+    font-family: Cabin-Regular;
+    src: url(./../police/Cabin-Regular.ttf);
+}
+@font-face {
+    font-family: PoetsenOne;
+    src: url(./../police/PoetsenOne-Regular.ttf);
+}
+a {
+  color: rgb(13, 6, 66);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(63, 140, 221);
+  text-decoration: underline;
+}
+body
+{
+margin: 0;
+}
+#warningMaintenance {
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    background-color: red;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    z-index: 10;
+}
+input {
+  border-radius: 5px;
+}

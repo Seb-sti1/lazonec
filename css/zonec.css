@@ -1,0 +1,654 @@
+/*
+Fihcier css de la page zonec
+*/
+/*======== header ========*/
+header {
+  text-align: center;
+}
+#bandeau {
+  margin-top: 20px;
+  width: 34%;
+}
+hr {
+  height: 5px;
+  border: 0px;
+  background-color: #f64c17;
+}
+h1, h2, h3 {
+  color: black;
+}
+header p {
+  margin: 0 auto;
+  width: 34%;
+  text-transform: uppercase;
+  text-align: right;
+  font-family: PoetsenOne;
+  font-size: 20px;
+  color: #a3a1a1;
+}
+
+#presentation, #publication {
+  position: absolute;
+}
+@media screen and (min-width: 930px) {
+  #publication {
+    width: 20%;
+    top: 50px;
+    right: 50px;
+  }
+  #presentation {
+    width: 20%;
+    top: 50px;
+    left: 50px;
+  }
+}
+@media screen and (max-width: 930px) {
+  #publication {
+    width: 28%;
+    top: 40px;
+    right: 0px;
+  }
+  #presentation {
+    width: 28%;
+    top: 40px;
+    left: 0px;
+  }
+}
+/*====== Présentation =====*/
+#videoPresentation {
+  z-index: 5
+}
+#fondPresentation {
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 4;
+  opacity: 0.5;
+  background-color: black;
+}
+#closePresentation {
+  position: fixed;
+  right: 250px;
+  top: 100px;
+  width: 55px;
+  z-index: 5;
+}
+@media screen and (max-width: 1100px) {
+  #closePresentation {
+    position: fixed;
+    right: 200px;
+    top: 100px;
+    width: 45px;
+    z-index: 5;
+  }
+}
+@media screen and (max-width: 900px) {
+  #closePresentation {
+    position: fixed;
+    right: 125px;
+    top: 100px;
+    width: 40px;
+    z-index: 5;
+  }
+}
+#videoPresentation iframe {
+  position: fixed;
+  right: 28%;
+  left: 28%;
+  width: 44%;
+  height: calc(44vw*9/16);
+  top: 200px;
+  z-index: inherit;
+}
+/*======== Pour tout =====*/
+body {
+  font-family: Cabin-Regular;
+  background-color: #f7f7f7;
+}
+h1 {
+  text-transform: uppercase;
+  margin-top: 0px;
+  text-align: left;
+  font-family: Cabin-SemiBold;
+  margin-left: 15px;
+}
+#video{
+  height: 337px;
+}
+#voirTout {
+  float: right;
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-family: Cabin-Regular;
+  font-size: 20px;
+  color: #000000;
+  height: 50px;
+}
+#articles{
+  height: 400px;
+}
+@media screen and (min-width: 981px) {
+  #contact, #teamc, #video, #articles, hr{
+    width: 80%;
+  }
+}
+#contact, #teamc, #video, #articles, hr{
+  margin: 0 auto;
+}
+
+h2, h3{
+  font-family: Cabin-MediumItalic;
+  font-weight: normal;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  height: 100px;
+  text-transform: capitalize;
+}
+/*====== Generale bouton ======*/
+#prevVideoImg, #prevArticleImg, #prevTeam {
+  width: 45px;
+  float: left;
+  margin-left: 5px;
+}
+#nextVideoImg, #nextArticleImg, #nextTeam {
+  width: 45px;
+  float: right;
+  margin-right: 5px;
+}
+#nextArticleImg:hover, #nextTeam:hover, #nextVideoImg:hover {
+  margin-left: 2px;
+  margin-right: 8px;
+}
+#prevArticleImg:hover, #prevTeam:hover, #prevVideoImg:hover {
+  margin-right: 2px;
+  margin-left: 8px;
+}
+/*======== Videos ========*/
+#prevVideoImg, #nextVideoImg{
+  margin-top: 64px;
+}
+#prevVideoImg, #iframes, #nextVideoImg {
+  display: inline-block;
+}
+#nextVideoImg:hover, #prevVideoImg:hover {
+  width: 40px;
+  margin-top: 68px;
+}
+#menuVideo {
+  text-align: center;
+  width: 100%;
+  height: 240px;
+}
+#iframes div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#iframes div {
+  display: inline-block;
+  vertical-align: top;
+}
+h3 {
+  width: 300px;
+}
+#video #voirTout a:hover {
+  color: #000000;
+}
+/*======== Articles ========*/
+#nextArticleImg, #prevArticleImg {
+  margin-top: 77px;
+}
+#nextArticleImg:hover, #prevArticleImg:hover {
+  width: 40px;
+  margin-top: 81px;
+}
+#prevArticleImg, #articlesImage, #nextArticleImg {
+  display: inline-block;
+}
+#articlesImage #article{
+  display: inline-block;
+  vertical-align: top;
+}
+#menuArticle {
+  text-align: center;
+  width: 100%;
+}
+.article {
+  position: absolute;
+  top: 345px;
+  left: 17%;
+  right: 17%;
+  z-index: 5;
+}
+#hitbox {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: none;
+  z-index: 4;
+}
+#shareDiv span, #shareDiv img {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+#shareDiv, #printDiv {
+  display: inline-block;
+  width: 145px;
+}
+#printDiv span, #printDiv img {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+#actionAButton {
+  width: 30px;
+  margin-top: 30px;
+}
+#closeButton {
+  width: 30px;
+  right: 25px;
+  position: absolute;
+  margin-top: 20px;
+}
+#cadre {
+  display: block;
+  background: #f7f7f7;
+  border: solid black 2px;
+  border-radius: 5px;
+  padding-bottom: 50px;
+  min-height: 600px;
+  font-family: Arial;
+  font-size: 22px;
+}
+#articlePresentation {
+  width: 200px;
+  height: 310px;
+  margin-right: 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+#articlePresentation img {
+  height: 200px;
+  width: 200px;
+  padding: 2px;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+.hide {
+  position: absolute;
+  display: none;
+  visibility: hidden;
+}
+#articles #voirTout:hover {
+  color: #000000;
+  cursor: pointer;
+  text-decoration: underline;
+}
+#articles #articleWindow {
+   position: absolute;
+   top: 400px;
+   left: 10%;
+   right: 10%;
+   z-index: 5;
+   display: block;
+   background: #f7f7f7;
+   border: solid black 2px;
+   padding-bottom: 50px;
+   min-height: 600px;
+   font-family: Arial;
+   font-size: 20px;
+}
+#articles #articleWindow p{
+  margin: 17px 0px 15px 15px;
+  font-weight: bold;
+}
+#articles #articleWindow hr {
+  width: 98%;
+}
+#articles #articleWindow #closeButton{
+ width: 25px;
+ right: 25px;
+ margin-top: 15px;
+}
+/* Fond du gadget de la barre de recherche */
+.recherche_a {
+  background-color: #eeeeee;
+  border: 2px solid    #f64c17;
+  padding: 3px 3px 3px 3px;
+}
+
+#searchthisa #searcha {
+  background-color: #ffffff;
+  border: 2px solid black;
+  margin-top: 1px;
+  margin-left: 3px;
+  padding: 5px 10px 5px 10px;
+  width: 60%;
+  box-sizing: border-box;
+  font-family: Arial;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+#searchthisa #search-btna {
+  background-color: #e64a1a;
+  float: right;
+  border: 2px solid black;
+  margin-right: 3px;
+  margin-top: 2px;
+  padding: 5px 3px 5px 3px;
+  width: 37%;
+  box-sizing: border-box;
+  font-family: Arial;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: black;
+}
+#searchthisa #search-btna:hover {
+  background-color: black;
+  color: rgb(255, 123, 0);
+  cursor: pointer;
+}
+#allArticleText {
+  width: 35%;
+}
+#allArticleText, #trierpara, .recherche_a{
+  display: inline-block;
+}
+#trierpara p, #trierpara input, #trierpara label {
+  display: inline-block;
+}
+#articles #trierpara input {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+}
+#articles #articleContainer {
+  text-align: center;
+  overflow-y: scroll;
+  height: 640px;
+  margin: 20px 20px 20px 20px;
+  padding: 0px 25px 0px 25px;
+}
+#articles #articleContainerContent{
+  margin: 5px 10px 10px 10px;
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 10%;
+  width: 225px;
+  height: 325px;
+  vertical-align: top;
+}
+#articleContainerContent img {
+  width: 215px;
+  padding: 4px;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+#articleContainerContent h4{
+  font-family: Cabin-MediumItalic;
+  font-weight: normal;
+  font-size: 20px;
+  height: 100px;
+  margin: 0px 5px 0px 5px;
+  
+}
+/*Article frame*/
+
+#titreASCass{
+  font-size: 25px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-decoration: underline;
+  width: 75%;
+  margin: 34px auto;
+}
+#introductionCss{
+  position: relative;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: justify;
+  width: 80%;
+  line-height: 32px;
+}
+#developpementCss {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 32px;
+}
+#developpementCss br {
+  margin: 0px 5px 5px 0px;
+}
+#conclusionCss{
+  position: relative;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+  margin-bottom: 33px;
+  line-height: 32px;
+}
+#auteurCss{
+  position: relative;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: left;
+  width: 80%;
+}
+#commentsDiv hr {
+  width: 5%;
+  background-color: #f64c17;
+  height: 2px;
+  border: solid #f64c17 1px;
+  border-radius: 2px;
+}
+#commentsDiv p {
+  margin: 0px;
+  margin-top: 7px;
+}
+#commentsDiv span {
+  font-style: italic;
+}
+/*======== Contact ========*/
+#contact {
+  text-align: center;
+}
+#mail {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+#mailValidation {
+  margin-top: 15px;
+}
+#newsletter {
+  width: 180px;
+}
+#menuContact {
+  height: 131px;
+  text-align: center;
+  padding: 10px;
+  border: solid black 2px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 1130px) {
+  #menuContact {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  #contact div {
+    display: inline-block;
+    vertical-align: top;
+  }
+  #contact {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 1130px) and (min-width: 675px) {
+  #menuContact {
+    padding: 0px;
+    margin: 5px;
+  }
+  #contact #partContact div {
+    display: inline-block;
+    margin: 5px;
+    vertical-align: top;
+    width: 150px;
+  }
+  #imgContact {
+    width: 90px;
+    margin: 5px;
+  }
+  #imgContactY {
+    width: 145px;
+    margin-top: 15px;
+  }
+  #contact {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  #menuContact {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    width: 230px;
+    display: inline-block;
+    text-align: center;
+  }
+  #contact {
+    height: 580px;
+  }
+}
+/*======= Team ========*/
+#prevTeam, #nextTeam {
+  margin-top: 100px;
+}
+#nextTeam:hover, #prevTeam:hover {
+  width: 40px;
+  margin-top: 104px;
+}
+#teamc {
+  height: 382px;
+}
+#teamMember div {
+  display: inline-block;
+  vertical-align: top;
+}
+#teamMember #membre {
+  width: 250px;
+  height: 225px;
+  border: solid black 3px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 5px;
+  text-align: center;
+}
+#teamMember img {
+  width: 220px;
+}
+#desc {
+  font-style: italic;
+}
+#teamMember, #prevTeam, #nextTeam {
+  display: inline-block;
+}
+#menuTeam {
+  text-align: center;
+}
+/*======= Annimation =======*/
+.appears {
+  opacity: 1;
+  animation-name: fade;
+  animation-duration: 150ms;
+  animation-direction: reverse;
+}
+.disappears {
+  animation-name: fade;
+  animation-duration: 150ms;
+  opacity: 0;
+}
+
+@keyframes fade {
+  0%   {opacity: 1;}
+  100% {opacity: 0;}
+}
+/* Animation Team */
+.moveLeftT {
+  animation-name: mooveLeftT;
+  animation-duration: 800ms;
+  padding-left: 0px;
+  margin-right: 286px;
+}
+.moveRightT {
+  animation-name: mooveRightT;
+  animation-duration: 800ms;
+  padding-right: 0px;
+  margin-left: 286px;
+}
+
+@keyframes mooveLeftT {
+  0%   {padding-left: 286px;margin-right: 0px;}
+  100% {padding-left: 0px;margin-right: 286px;}
+}
+@keyframes mooveRightT {
+  0%   {padding-right: 286px;margin-left: 0px;}
+  100% {padding-right: 0px;margin-left: 286px;}
+}
+/* Animation Article */
+.moveLeftA {
+  animation-name: mooveLeftA;
+  animation-duration: 800ms;
+  padding-left: 0px;
+  margin-right: 220px;
+}
+.moveRightA {
+  animation-name: mooveRightA;
+  animation-duration: 800ms;
+  padding-right: 0px;
+  margin-left: 220px;
+}
+
+@keyframes mooveLeftA {
+  0%   {padding-left: 220px;margin-right: 0px;}
+  100% {padding-left: 0px;margin-right: 220px;}
+}
+@keyframes mooveRightA {
+  0%   {padding-right: 220px;margin-left: 0px;}
+  100% {padding-right: 0px;margin-left: 220px;}
+}
+
+/* Animation Video */
+.moveLeftV {
+  animation-name: mooveLeftV;
+  animation-duration: 800ms;
+  padding-left: 0px;
+  margin-right: 320px;
+}
+.moveRightV {
+  animation-name: mooveRightV;
+  animation-duration: 800ms;
+  padding-right: 0px;
+  margin-left: 320px;
+}
+
+@keyframes mooveLeftV {
+  0%   {padding-left: 320px;margin-right: 0px;}
+  100% {padding-left: 0px;margin-right: 320px;}
+}
+@keyframes mooveRightV {
+  0%   {padding-right: 320px;margin-left: 0px;}
+  100% {padding-right: 0px;margin-left: 320px;}
+}

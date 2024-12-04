@@ -1,0 +1,73 @@
+a {
+    color: rgb(13, 6, 66);
+    text-decoration: none;
+}
+.article {
+    text-align: center;
+}
+#faviconzonec {
+    width: 6%;
+    height: 6%;
+    padding: 5px;
+    margin: 10px;
+    float: left;
+    display: inherit;
+}
+#imguploadp {
+    width: 9%;
+    height: 9%;
+    padding: 5px;
+    margin-right: 11%;
+    border: solid black 2px;
+    border-radius: 10%;
+}
+#cadre {
+    display: block;
+    padding-bottom: 25px;
+    min-height: 600px;
+    font-family: Arial;
+    font-size: 22px;
+    padding: 5px 5% 0px 5%;
+}
+#titreASCass {
+    font-size: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-decoration: underline;
+    width: 75%;
+    margin: 5px auto;
+}
+#introductionCss {
+    font-size: 15px;
+    font-style: italic;
+    line-height: 2px;
+    margin: 0 auto;
+    width: 97%;
+    line-height: 20px;
+}
+#developpementCss {
+    font-size: 13px;
+    text-align: justify;
+    width: 97%;
+    margin: 0 auto;
+    line-height: 18px;
+}
+#conclusionCss {
+    font-size: 15px;
+    width: 97%;
+    margin: 0 auto;
+    margin-bottom: 33px;
+    line-height: 20px;
+}
+#auteurCss {
+    line-height: 22px;
+    font-size: 18px;
+    width: 97%;
+}
+#footerp {
+    margin: 10px 5px 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+}

@@ -1,0 +1,16 @@
+/*
+Fihcier css de la page maintenance
+*/
+#grand{
+    padding-top: 50px;
+    font-size: 50px;
+    display: block;
+}
+#petit{
+    padding-top: 25px;
+    font-size: 20px;
+    display: block;
+}
+body{
+    text-align: center;
+}

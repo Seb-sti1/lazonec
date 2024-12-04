@@ -1,0 +1,9 @@
+User-Agent: Twitterbot
+Allow: /image/
+
+User-Agent: *
+Disallow: /image/
+Disallow: /police/
+Disallow: /print.html
+
+Sitemap: https://lazonec.fr/sitemap.txt
