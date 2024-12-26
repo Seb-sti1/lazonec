@@ -19,7 +19,7 @@
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:site" content="@La_Zone_C"/>
     <meta name="twitter:description"
-          content="La Zone C, le média 100% lycéen ! On vulgarise des sujets de l\'économie collaborative et circulaire."/>
+          content="La Zone C, le média 100% lycéen ! On vulgarise des sujets de l'économie collaborative et circulaire."/>
     <meta name="twitter:image" content="image/faviconZoneC.png"/>
     <meta name="twitter:title" content="La Zone C"/>
 </head>
@@ -70,40 +70,32 @@
     </div>
 
     <script type="text/javascript">
-        var playlist_id = "PLvQzlb4rGLmaq7TlM47D312hgOPmTlVIq";
-
-        var videoID = [];
-        var videoTitle = [];
-        var nextURL = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=" + playlist_id + "&key=AIzaSyAOy4UoQjjts6PkgVCF6ffU32PclxdaZxE";
+        var videoID = ["22v1gQUBLEw", "tmDVqy4iwvA", "8s24J7qwTWE", "2ZvCsOCkAtU", "H9tYqLnu0fE",
+            "uLgmgQg9JqA", "qMNFFIixNwM", "htPfvAMQBeA", "pGFRBpzrels", "KWHeR4ObsUg", "Rx7Agj3g0sg",
+            "N3zcsJkEe9Y", "UinG_m7czh4", "sRITNTmNSw8", "qbXhVN5FYWY", "-N6qw7PgGiI", "e62vFa046lc",
+            "oqfzAOWHarg", "de0fXKUG0y4", "BnSsoIvDPY0", "iFIL7kBXFzo", "X6mQYPMiMR8", "hIdq02ACAiw",
+            "G7So_WgIThc", "vnyTyOWwYY4", "VHNIQYSQ0-c", "WPUigXFH5kk", "dZtyNVioceU", "Ht4r75bJr64",
+            "wro1njM3CbY", "Bg_DitTcHEA", "dntTMG8dP3A"];
+        var videoTitle = [
+            "on a créé notre association au lycée", "elon musk : entrepreneur immature ?",
+            "la zone c x checknews : les mangas", "obsolescence programmée : l'arnaque du siècle ?",
+            "le cohabitat : plus proche de vos voisins?", "créer un média lycéen : on vous explique",
+            "bill gates : riche et généreux ?", "start up : effet de mode ?",
+            "les frigos solidaires : nourriture pour tous", "michelle obama : altruisme et politique ?",
+            "coavionnage : des avions taxis ?", "l'economie frugale : votre systeme d",
+            "mark zuckerberg : génie ou voleur ?", "les cafes suspendus : deux en un",
+            "ecologie industrielle, les usines se mettent au vert", "on a des grandes nouvelles !",
+            "la blockchain : internet se modernise", "le cobanking : adieu votre banquier",
+            "uberisation : plutot taxi ou uber ?", "les mooc : la fin des salles de classe",
+            "le cooperatisme : un ennemi a la concurrence ?", "la culture libre : une philosophie du partage ?",
+            "les amap : les légumes pour tous", "écoquartiers : nos maisons du futur",
+            "l' economie circulaire : une nouvelle boucle ?", "nos coulisses !",
+            "couchsurfing : et si on échangeait nos canapés ?", "crowdfunding : c'est la foule qui vous finance !",
+            "pib vert : une nouvelle forme de croissance ?", "les consom'acteurs : des acheteurs responsables ?",
+            "les fablabs : des laboratoires collaboratifs", "la zone c : qu'est-ce que c'est ?"
+        ]
 
         var videoIdle = false;
-
-        function getVideosId() {
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", nextURL);
-            xhr.send();
-            xhr.onload = function () {
-                if (this.status == 200) {
-                    var json = JSON.parse(this.responseText);
-                    for (var i = 0; i < json.items.length; i++) {
-                        if (json.items[i].snippet.title != "Private video") {
-                            videoID[json.items[i].snippet.position] = json.items[i].snippet.resourceId.videoId;
-                            videoTitle[json.items[i].snippet.position] = json.items[i].snippet.title.toLowerCase();
-                        }
-                    }
-                    if (json.nextPageToken != null) {
-                        nextURL = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=" + playlist_id + "&key=AIzaSyAOy4UoQjjts6PkgVCF6ffU32PclxdaZxE&pageToken=" + json.nextPageToken;
-                        getVideosId();
-                    } else {
-                        main();
-                    }
-                } else {
-                    console.log("erreur réseau : " + this.status + " " + this.statusText);
-                }
-            };
-        }
-
-        getVideosId();
 
         var quantiteVideo = 1;
 
@@ -247,11 +239,10 @@
 
         }
 
-        function main() {
-            posVideo = 0;
-            limitQuantiteVideo();
-            actualizePos();
-        }
+
+        posVideo = 0;
+        limitQuantiteVideo();
+        actualizePos();
     </script>
 </div>
 <hr>
